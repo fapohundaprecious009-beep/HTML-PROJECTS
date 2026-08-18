@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   /* Horizontal */
+    align-items: center;       /* Vertical */
+    background-color: #f5eddc;
+}
+
+.parent{
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.rate{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tell{
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -15px;
+}
+.all{
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.all2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.all3{
+    border-radius: 5pt;
+    text-align: left;
+    padding: 8px 170px; /* Top/Bottom padding, Left/Right padding */
+}
+select {
+    font-size: 14px;    /* Increases text size to match the larger box */
+    border-radius: 5pt;
+}
+input[type="text"], select {
+    box-sizing: border-box; /* Crucial: stops padding from breaking the layout */
+    width: 500px;           /* Sets the large width of the box */
+    padding: 15px 15px 15px 25px; /* Large box size, text pushed to the left */
+    text-align: left;       /* Keeps text left-aligned */
+}
+
+/* Container bar exactly like the image */
+.rating-container {
+    display: flex;
+    background-color: #EFA8A8; /* Matches the dark pink background in your image */
+    padding: 10px;
+    border-radius: 12px;       /* Rounded corners for the main pill bar */
+    max-width: 600px;          /* Adjust this to fit your form width */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* CONTAINER SETUP */
+.rating-container {
+    display: flex;
+    background-color: #F8C3C3;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* STACK EMOJI, TEXT, AND RADIO BUTTON IN A LINE */
+.rating-container label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;          /* Stacks emoji -> text -> radio button vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 8px;                        /* Even space between text and the radio circle */
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #4A1515;
+    padding: 12px 0;
+    transition: all 0.2s ease;
+}
+
+/* MARGIN ADJUSTMENT FOR NATIVE BUTTONS */
+.rating-container label input[type="radio"] {
+    cursor: pointer;
+    margin: 0;                       /* Prevents browser-default alignment offsets */
+}
+
+/* THE SELECTION BLOCK BACKGROUND COLOR */
+.rating-container label:has(input[type="radio"]:checked) {
+    background-color: #FCD6D6;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.experience{
+    box-sizing: border-box;
+    height: 100px;
+}

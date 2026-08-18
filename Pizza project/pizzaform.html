@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzaform.css">
+    <title>Pizza feedback form</title>
+</head>
+<body>
+    
+    <div class="parent">
+    <form>
+        <div class="rate">
+        <h1>🍕 Rate our Pizza!</h1>
+        </div>
+
+        <div class="tell">
+        <p>Tell us about your recent slice so we can make our recipe even better.</p>
+        </div>
+
+        <div>
+        <label for="name" class="all">Your Name: </label><br><br>
+        <input type="text" id="name" class="all3" placeholder="Isaac" required>
+        <br><br>
+        </div>
+
+        <div>
+        <label for="type" class="all">Which pizza did you try?</label><br><br>
+        <select name="text" id="type">
+            <option>Select your Pizza...</option>
+            <option>Magherita Pizza</option>
+            <option>Mushroom Pizza</option>
+            <option>Hawalian Pizza</option>
+            <option>Pesto Pizza</option>
+        </select>
+        <br><br>
+        </div>
+
+        <div class="rating-group">
+        <label for="rating" class="all">Overall Taste Rating:</label><br>
+        
+
+        <div class="rating-container">
+        <label for="terrible" class="all2">Terrible</label><br>
+        <input type="radio" id="terrible" name="try">
+
+        <label for="okay" class="all2">Okay</label>
+        <input type="radio" id="okay" name="try">
+
+        <label for="good" class="all2">Good</label>
+        <input type="radio" id="good" name="try">
+
+        <label for="amazing" class="all2">Amazing</label>
+        <input type="radio" id="amazing" name="try"><br><br>
+        </div>
+        </div>
+
+        <div>
+            <label for="apply" class="all">What can we improve (Select all that apply) </label><br><br>
+
+            <input type="checkbox" id="cheese">
+            <label for="cheese" class="all2" >Need more cheese</label>
+
+            <input type="checkbox" id="sauce">
+            <label for="sauce" class="all2">Needs more sauce</label><br>
+
+            <input type="checkbox" id="soft">
+            <label for="soft" class="all2">Crust too soft</label>
+
+            <input type="checkbox" id="greasy">
+            <label for="greasy" class="all2">Too greasy</label><br><br>
+
+
+        </div>
+
+        <div>
+            <label for="extra" class="all" class="experience">Any extra thoughts or suggestions?</label><br><br>
+            <input type="text" id="extra" placeholder="Tell us more about your experience...."><br><br>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+        
+    </form>
+
+    </div>
+</body>
+</html>

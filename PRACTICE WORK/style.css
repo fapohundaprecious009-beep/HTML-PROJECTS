@@ -1,0 +1,15 @@
+*{
+
+}
+.parent{
+    height: auto;
+     width: auto;
+    background-color: rgb(163, 182, 127)
+}
+.img{
+    height: 500px;width: 600px;
+    background-image: url(../Html_class/img/a07057e936944f22ef218b6484220172.jpg);
+    background-repeat: none;
+    background-position: center;
+
+}

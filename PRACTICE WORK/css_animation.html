@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation Test</title>
+  <style>
+    /* 1. Define physical size, visual background, and performance settings */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #2563eb; /* Blue box */
+      border-radius: 8px;
+
+      animation: infinite 2s infinite alternate ease-in;
+      
+      /* Attach keyframes (2s duration, continuous loop, smooth movement) */
+      /* animation: moveBox 2s infinite alternate ease-in-out; */
+    }
+
+    /* 2. Define motion using transform (GPU-accelerated) instead of margin */
+    @keyframes infinite{
+      from {
+        transform: translateX(0px);
+      }
+      to {
+        transform: translateX(20px);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- The target HTML element MUST exist in the body -->
+  <div class="box">box</div>
+
+</body>
+</html>
