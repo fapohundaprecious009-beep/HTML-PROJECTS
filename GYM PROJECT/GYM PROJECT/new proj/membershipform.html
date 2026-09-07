@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> membership </title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div class="intro">
+     <h1 class="how">How to become a member</h1>
+     <p class="con">Congragulations on choosing to become a member of our establishment. 
+        <br><br><b> A stronger you begins now</b> 
+        <br><br>Register today at 15% off</p>
+
+  </div>
+
+
+  <div class="member"> 
+     <!-- <p class="bec"> Become a member!!</p>
+      -->
+     
+         <form>
+
+        <div>
+         <br><br><label for="fname" class="name">Name:</label><br><br>
+         <input type="text" id="fname" class="name2" placeholder=" lazyahh"> <br><br>
+         </div>
+         
+         <div>
+         <label for="plans" class="name">Pick a subscription: </label><br><br>
+         <select id="plans" required class="pay"> <br>
+             <option  value="" class="name2"> Choose a plan: </option>
+             <option value="Basic" class="pay"> Basic...(₦20000/month)</option>
+             <option value="standard" class="pay">Standard...(₦40000/month)</option>
+             <option value="elite" class="pay">Elite...(₦50000/month)</option>
+             <option value="Marine" class="pay">Marine...(₦70000/month)</option>
+         </select>  <br><br>
+         </div>
+
+         <div>
+         <label class="name">Payment method:</label><br><br>
+         <input type="radio" id="verve" name="mrs" required>
+         <label for="verve" class="paye">verve</label>
+         <input type="radio" id="visa" name="mrs" required>
+         <label for="visa" class="paye">visa</label>
+         <input type="radio" id="mastercard" name="mrs" required>
+         <label for="mastercard" class="paye">mastercard</label><br><br>
+         </div>
+         
+         <div>
+         <label for="phone no" class="name">Phone number:</label><br><br>
+         <input type="tel" name="" id="phone number" class="name2" inputmode="numeric"  oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="11" required><br><br>
+         </div>
+         
+         <div>
+         <label for="mail" class="name">E-mail:</label><br><br>
+         <input type="email" class="name2" name="" id="mail" placeholder="example@gmail.com"> <br><br>
+         </div>
+         
+         <div>
+         <label class="name">Current fitness level:</label><br><br>
+         <label for="beginner" class="paye">Beginner</label>
+         <input type="radio"  id="beginner" name="rating">
+         <label for="casr" class="paye">casual</label>
+         <input type="radio"  id="casr" name="rating">
+         <label for="consus" class="paye">consistent</label>
+         <input type="radio"  id="consus" name="rating">
+         <label for="comp" class="paye">competitive</label>
+         <input type="radio"  id="comp" name="rating">
+         <label for="consus" class="paye">Athlete</label>
+         <input type="radio"  id="conssu" name="rating"><br><br>
+         </div>
+         
+         <div>
+         <input type="checkbox" name="" id="t&cs" required>
+         <label for="t&cs" class="have">I have read and agreed to the <a href="https://support.apple.com/" target="_blank" rel="noopener">Terms and conditions</a></label><br><br>
+         </div>
+         
+         <button type="submit" class="submit">SUBMIT</button>
+        </form>
+</div>
+</body>
+</html>

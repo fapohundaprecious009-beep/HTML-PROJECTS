@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="applicationform.css">
+</head>
+<body>
+   <div class="header">
+        <div class="head">
+        <div>
+        <img class="logo" src="logo.png" alt="logo">
+        </div> 
+        <div>
+            <p class="wel2">HERA'S BEAUTY SALON</p>
+            <p class="wel3">birthplace of elegance and beauty</p> 
+            </div>
+        </div>
+            </div>
+    <div class="application">
+    <h3> Application Form</h3>
+    <p>Complete the form to apply and we will reach out to you. </p>
+    <form>
+         <label for="name" class="name">Name:</label><br><br>
+         <input type="text" id="name" class="names" placeholder="both first and last names" required> 
+         <br><br>
+         
+         <label class="name"> Position:</label><br><br>
+         <!-- i added another role here-->
+         <select class="names"> 
+             <option class="names"> Select your specialization</option> 
+             <option value=""> Stylist</option>
+             <option> Colorist</option>
+             <option value="">Trichologist</option>
+             <option value="">Cosmetician</option>
+             <option value=""> Dermatologist</option>
+             <option value=""> Model</option>
+             <!-- <option value=""> My babe😝</option> -->
+         </select><br><br>
+         
+         <label class="name">Experience:</label><br><br>
+        <div class="radio">
+         <input type="radio" id="less than a year"  value="exp" name="exp2">
+         <label for="less than a year">less than a year</label>
+         <input type="radio" id="1 year"  value="exp" name="exp2">
+         <label for="1 year">1 year</label>
+         <input type="radio" id="2years"  value="exp" name="exp2">
+         <label for="2years">2 years</label>
+         <input type="radio" id="3 years"  value="exp" name="exp2">
+         <label for="3 years">3 years</label>
+         <input type="radio" id="4"  value="exp" name="exp2">
+         <label for="4">4 years</label>
+         <input type="radio" id="5"  value="exp" name="exp2">
+         <label for="5">4+ years</label><br><br>
+         </div>
+
+         <label class="name"> Certification:</label><br><br>
+         <div class="radio">
+         <input type="radio" id="cert" name="rest" value="rext">
+         <label for="cert">YES</label>
+         <Input type="radio" id="notcert" name="rest" value="rext">
+         <label for="notcert">NO</label><br><br>
+        </div>
+
+         <label for="tell" class="name">Phone:</label><br><br>
+         <input type="tel" class="names"  id="tell" maxlength="11" pattern="[0-9]*" inputmode="numeric"  oninput="this.value = this.value.replace(/[^0-9]/g, '');"required >  <br><br>
+         
+         <label for="ME" class="name">Email:</label><br><br>
+         <input type="email" name="" class="names" id="ME" > <br><br>
+         
+         <input type="checkbox" class="hand" name="x" id="xx" required><label for="xx" > <i>I have read and agreed to uphold the rules written within the <a href="employee hand book" target="_blank" rel="noreferrer">
+          employee hand book</a></i></label> <br>
+          
+          <button class="button" type="submit">SUBMIT</button>
+        
+    
+
+
+
+
+    </form>
+    </div>
+</body>
+</html>
