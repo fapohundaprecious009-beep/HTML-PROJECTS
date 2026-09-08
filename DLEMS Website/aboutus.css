@@ -634,127 +634,501 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     align-items: center;
-}/* ================= RESPONSIVE ================= */
+}
 
-@media (max-width: 400px) {
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+        padding: 8px 25px;
+        gap: 15px;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+
+    .social-links {
+        margin-left: auto;
+        gap: 12px;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
 
     .navigation {
+        padding: 15px 25px;
+        gap: 20px;
         flex-wrap: wrap;
+    }
+
+    .brand {
+        gap: 10px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand-text h2 {
+        font-size: 17px;
+    }
+
+    .brand-text p {
+        font-size: 11px;
     }
 
     .menu {
-        order: 3;
-
         width: 100%;
-
         justify-content: center;
-
+        margin-left: 0;
+        gap: 18px;
         flex-wrap: wrap;
     }
 
-    .who-we-are,
-    .why-section {
-        flex-direction: column;
+    .apply-button {
+        padding: 11px 18px;
     }
 
-    .about-image,
-    .about-content,
-    .why-content,
-    .why-list {
-        width: 100%;
+
+    /* ---------- HERO ---------- */
+
+    .about-hero {
+        height: 400px;
+        padding: 45px;
     }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content > p:last-child {
+        font-size: 17px;
+    }
+
+
+    /* ---------- WHO WE ARE ---------- */
+
+    .who-we-are {
+        gap: 40px;
+        padding: 65px 5%;
+    }
+
+    .about-image img {
+        height: 370px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- MISSION & VISION ---------- */
 
     .mission-section {
-        flex-direction: column;
+        padding: 60px 5%;
+        gap: 20px;
     }
 
     .mission-card {
-        width: 100%;
+        width: 48%;
+        padding: 30px;
+    }
+
+
+    /* ---------- VALUES ---------- */
+
+    .values-section {
+        padding: 65px 5%;
     }
 
     .value-card {
         width: 45%;
     }
 
-    .footer {
-        flex-wrap: wrap;
+
+    /* ---------- WHY SECTION ---------- */
+
+    .why-section {
+        padding: 65px 5%;
+        gap: 45px;
     }
 
-    .footer-column {
-        min-width: 40%;
+    .why-content h2 {
+        font-size: 36px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .about-cta {
+        padding: 50px 6%;
+    }
+
+    .about-cta h2 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 35px 30px;
+    }
+
+    .footer > div {
+        width: 45%;
+        border-right: none;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        height: auto;
+        min-height: 50px;
+        gap: 30px;
+        padding: 12px 20px;
+        text-align: center;
+        flex-wrap: wrap;
     }
 }
 
 
-@media (max-width: 650px) {
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- GENERAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* ---------- TOP BAR ---------- */
 
     .top-bar {
-        display: none;
+        min-height: auto;
+        padding: 9px 15px;
+        justify-content: center;
+        text-align: center;
     }
+
+    .top-bar p {
+        width: 100%;
+    }
+
+    .social-links {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
 
     .navigation {
-        padding: 15px 20px;
+        min-height: auto;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
     }
 
-    .brand-text h2 {
-        font-size: 15px;
+    .brand {
+        justify-content: center;
+        text-align: center;
     }
 
     .logo {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand-text h2 {
+        font-size: 16px;
+    }
+
+    .brand-text p {
+        font-size: 10px;
     }
 
     .menu {
-        gap: 12px;
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 0;
+        align-items: center;
     }
 
     .menu a {
-        font-size: 11px;
+        font-size: 14px;
+        padding: 7px 0;
     }
 
-    .about-hero {
-        height: 400px;
+    .apply-button {
+        display: inline-block;
+        padding: 12px 20px;
+    }
 
-        padding: 30px;
+
+    /* ---------- HERO ---------- */
+
+    .about-hero {
+        height: auto;
+        min-height: 420px;
+        padding: 55px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .small-heading,
+    .section-title {
+        font-size: 13px;
     }
 
     .hero-content h1 {
-        font-size: 40px;
+        font-size: 38px;
+        line-height: 1.15;
     }
 
+    .hero-content > p:last-child {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* ---------- WHO WE ARE ---------- */
+
     .who-we-are {
-        padding: 50px 25px;
+        flex-direction: column;
+        gap: 35px;
+        padding: 55px 20px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 300px;
+        border-radius: 12px;
     }
 
     .about-content h2 {
-        font-size: 30px;
+        font-size: 31px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+
+    /* ---------- MISSION & VISION ---------- */
+
+    .mission-section {
+        flex-direction: column;
+        padding: 55px 20px;
+        gap: 20px;
+    }
+
+    .mission-card {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .mission-card h2 {
+        font-size: 25px;
+    }
+
+
+    /* ---------- VALUES ---------- */
+
+    .values-section {
+        padding: 55px 20px;
+    }
+
+    .section-heading {
+        font-size: 31px;
+    }
+
+    .section-intro {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .values-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .value-card {
         width: 100%;
+        min-height: auto;
+        padding: 28px 20px;
     }
+
+
+    /* ---------- WHY SECTION ---------- */
+
+    .why-section {
+        flex-direction: column;
+        padding: 55px 20px;
+        gap: 35px;
+        align-items: stretch;
+    }
+
+    .why-content,
+    .why-list {
+        width: 100%;
+    }
+
+    .why-content h2 {
+        font-size: 32px;
+    }
+
+    .why-content p {
+        font-size: 15px;
+    }
+
+
+    /* ---------- CTA ---------- */
 
     .about-cta {
         flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 20px;
+        gap: 25px;
+    }
 
+    .about-cta h2 {
+        font-size: 31px;
+    }
+
+    .about-cta p:last-child {
+        font-size: 15px;
+    }
+
+    .cta-button {
+        padding: 14px 22px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer > div {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .foot {
         align-items: flex-start;
     }
 
-    .footer {
-        flex-direction: column;
-
-        padding: 40px 25px;
+    .we {
+        text-align: left;
     }
 
-    .footer-column {
+    .copyright {
         width: 100%;
+        height: auto;
+        min-height: 60px;
+        padding: 15px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
 
-        border-right: none;
 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/* ================= SMALL PHONES ================= */
 
-        padding-bottom: 25px;
+@media (max-width: 480px) {
+
+    .top-bar {
+        font-size: 9px;
     }
 
+    .social-links a {
+        font-size: 10px;
+    }
+
+    .brand-text h2 {
+        font-size: 14px;
+    }
+
+    .brand-text p {
+        font-size: 9px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content > p:last-child {
+        font-size: 15px;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .mission-card {
+        padding: 25px 18px;
+    }
+
+    .mission-card h2 {
+        font-size: 23px;
+    }
+
+    .section-heading {
+        font-size: 28px;
+    }
+
+    .why-content h2 {
+        font-size: 28px;
+    }
+
+    .about-cta h2 {
+        font-size: 28px;
+    }
+
+    .value-card h3 {
+        font-size: 18px;
+    }
+
+    .value-card p,
+    .mission-card p,
+    .why-item {
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
 }

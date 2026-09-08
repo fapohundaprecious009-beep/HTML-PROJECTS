@@ -851,41 +851,580 @@ a {
 }
 
 
-/* =========================================
-   SMALL PHONES
-========================================= */
+/* =========================================================
+   FINAL RESPONSIVE DESIGN
+   ADMISSION PAGE
+   ========================================================= */
 
-@media (max-width: 400px) {
 
-    .academic-hero {
-        padding: 20px;
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+        padding: 8px 25px;
+        gap: 15px;
+        font-size: 10px;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    .navigation {
+        padding: 12px 25px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand-text h2 {
+        font-size: 17px;
+    }
+
+    .brand-text p {
+        font-size: 11px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .apply-button {
+        padding: 11px 18px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .admission-hero {
+        height: 400px;
+    }
+
+    .hero-overlay {
+        max-width: 750px;
+        padding: 25px;
     }
 
     .hero-overlay h1 {
-        font-size: 34px;
+        font-size: 48px;
+    }
+
+    .hero-overlay > p:last-child {
+        font-size: 17px;
+    }
+
+
+    /* ---------- INTRO ---------- */
+
+    .admission-intro {
+        padding: 60px 7%;
+    }
+
+    .admission-intro h2 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- APPLICATION ---------- */
+
+    .application-section {
+        padding: 65px 5%;
+    }
+
+    .application-container {
+        gap: 35px;
+    }
+
+    .admission-info {
+        width: 45%;
+    }
+
+    .application-form {
+        width: 55%;
+        padding: 30px;
+    }
+
+
+    /* ---------- PROCESS ---------- */
+
+    .process {
+        padding: 65px 5%;
+    }
+
+    .process-container {
+        gap: 20px;
+    }
+
+    .process-card {
+        width: 45%;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .admission-contact {
+        padding: 60px 25px;
+    }
+
+    .admission-contact h2 {
+        font-size: 30px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 35px 25px;
+    }
+
+    .footer > div {
+        width: 45%;
+        border-right: none;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        height: auto;
+        min-height: 50px;
+        padding: 12px 20px;
+        gap: 30px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- GENERAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+        min-height: auto;
+        padding: 9px 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .top-bar p {
+        width: 100%;
+    }
+
+    .social-links {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    .navigation {
+        min-height: auto;
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .brand {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand-text h2 {
+        font-size: 16px;
+    }
+
+    .brand-text p {
+        font-size: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 7px 0;
+    }
+
+    .apply-button {
+        padding: 11px 20px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .admission-hero {
+        height: auto;
+        min-height: 400px;
+        padding: 45px 20px;
+    }
+
+    .hero-overlay {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
     }
 
     .hero-overlay .small-title {
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 38px;
+        line-height: 1.15;
+        margin-bottom: 16px;
+    }
+
+    .hero-overlay > p:last-child {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* ---------- INTRO ---------- */
+
+    .admission-intro {
+        padding: 50px 20px;
+    }
+
+    .gold-title {
+        font-size: 13px;
+    }
+
+    .admission-intro h2 {
+        font-size: 29px;
+        line-height: 1.2;
+    }
+
+    .intro-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- APPLICATION ---------- */
+
+    .application-section {
+        padding: 50px 20px;
+    }
+
+    .application-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .admission-info,
+    .application-form {
+        width: 100%;
+    }
+
+    .admission-info h2 {
+        font-size: 29px;
+    }
+
+    .admission-info > p:not(.gold-title) {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .info-box {
+        padding: 18px;
+    }
+
+    .student-picture {
+        height: 250px;
+    }
+
+    .application-form {
+        padding: 25px 18px;
+        border-radius: 10px;
+    }
+
+    .application-form h2 {
+        font-size: 25px;
+    }
+
+    .form-note {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* ---------- FORM ---------- */
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row > div {
+        width: 100%;
+    }
+
+    .form-heading {
+        font-size: 17px;
+    }
+
+    .application-form label {
+        font-size: 12px;
+    }
+
+    .application-form input,
+    .application-form select,
+    .application-form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .upload-box {
+        padding: 17px;
+    }
+
+    .upload-box p {
+        font-size: 11px;
+    }
+
+    .submit-btn {
+        height: 52px;
         font-size: 14px;
     }
+
+
+    /* ---------- ADMISSION PROCESS ---------- */
 
     .process {
         padding: 50px 20px;
     }
 
     .process > h2 {
-        font-size: 28px;
+        font-size: 29px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .process-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .process-card {
         width: 100%;
+        min-height: auto;
+        padding: 28px 20px;
     }
 
-    .student-picture {
-        height: 240px;
+    .process-card h3 {
+        font-size: 18px;
+    }
+
+    .process-card p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- CONTACT CTA ---------- */
+
+    .admission-contact {
+        padding: 50px 20px;
     }
 
     .admission-contact h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .admission-contact p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .admission-contact button {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px 20px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer > div {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 25px;
+        border-right: none;
+    }
+
+    .footer > div:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .we {
+        text-align: left;
+    }
+
+    .link2 {
+        flex-wrap: wrap;
+    }
+
+    .copyright {
+        width: 100%;
+        height: auto;
+        min-height: 60px;
+        padding: 15px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- BRAND ---------- */
+
+    .brand {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand-text h2 {
+        font-size: 15px;
+    }
+
+    .brand-text p {
+        font-size: 9px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .admission-hero {
+        min-height: 430px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 31px;
+    }
+
+    .hero-overlay > p:last-child {
+        font-size: 14px;
+    }
+
+
+    /* ---------- INTRO ---------- */
+
+    .admission-intro h2 {
+        font-size: 26px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+
+    /* ---------- APPLICATION ---------- */
+
+    .admission-info h2 {
         font-size: 27px;
+    }
+
+    .application-form {
+        padding: 22px 15px;
+    }
+
+    .application-form h2 {
+        font-size: 23px;
+    }
+
+
+    /* ---------- PROCESS ---------- */
+
+    .process > h2 {
+        font-size: 26px;
+    }
+
+    .process-card {
+        padding: 25px 18px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .admission-contact h2 {
+        font-size: 26px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .copyright {
+        font-size: 10px;
     }
 }

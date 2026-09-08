@@ -818,146 +818,615 @@ body {
     align-items: center;
 }
 
-/* =====================================================
+/* =========================================================
    RESPONSIVE DESIGN
-===================================================== */
-
-@media (max-width: 400px) {
-
-    .nav {
-        flex-wrap: wrap;
-    }
-
-    .nav-links {
-        order: 3;
-
-        width: 100%;
-
-        flex-wrap: wrap;
-
-        margin-top: 15px;
-    }
-
-    .academic-intro,
-    .curriculum {
-        flex-direction: column;
-    }
-
-    .intro-image,
-    .intro-content,
-    .curriculum-content,
-    .curriculum-box {
-        width: 100%;
-    }
-
-    .programme-card,
-    .feature-card {
-        width: 45%;
-    }
-
-    .footer {
-        flex-wrap: wrap;
-    }
-
-}
+   ACADEMIC PAGE
+   ========================================================= */
 
 
+/* ================= TABLET ================= */
 
-@media (max-width: 650px) {
+@media (max-width: 992px) {
+
+    /* ---------- TOP BAR ---------- */
 
     .top-bar {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        padding: 10px 20px;
-
-        gap: 7px;
+        padding: 8px 25px;
+        gap: 15px;
+        font-size: 10px;
     }
 
     .social-links {
-        margin-left: 0;
-    }
-
-
-    .nav {
-        padding: 15px 20px;
-
-        justify-content: center;
-    }
-
-
-    .nav-links {
         gap: 12px;
     }
 
 
-    .nav-links a {
+    /* ---------- NAVIGATION ---------- */
+
+    .navigation {
+        padding: 12px 25px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand-text h2 {
+        font-size: 17px;
+    }
+
+    .brand-text p {
         font-size: 11px;
     }
 
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+
+    /* ---------- ACADEMIC HERO ---------- */
+
+    .academic-hero {
+        min-height: 470px;
+    }
 
     .academic-hero-content {
-        padding: 50px 25px;
+        max-width: 650px;
+        padding-left: 45px;
+        padding-right: 30px;
     }
-
 
     .academic-hero-content h1 {
-        font-size: 40px;
+        font-size: 47px;
     }
 
+    .hero-text {
+        font-size: 16px;
+    }
+
+
+    /* ---------- INTRODUCTION ---------- */
+
+    .academic-intro {
+        gap: 40px;
+        padding: 65px 6%;
+    }
+
+    .intro-image,
+    .intro-content {
+        width: 50%;
+    }
+
+    .intro-image img {
+        height: 350px;
+    }
+
+    .intro-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- PROGRAMMES ---------- */
+
+    .programmes {
+        padding: 65px 5%;
+    }
+
+    .programme-card {
+        width: 45%;
+        min-width: 250px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .academic-features {
+        padding: 65px 5%;
+    }
+
+    .feature-card {
+        width: 45%;
+        min-width: 240px;
+    }
+
+
+    /* ---------- CURRICULUM ---------- */
+
+    .curriculum {
+        padding: 65px 6%;
+        gap: 45px;
+    }
+
+    .curriculum-content,
+    .curriculum-box {
+        width: 50%;
+    }
+
+    .curriculum-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .academic-cta {
+        padding: 65px 30px;
+    }
+
+    .academic-cta h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 35px 25px;
+        gap: 30px;
+    }
+
+    .footer > div {
+        width: 45%;
+        border-right: none;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        height: auto;
+        min-height: 50px;
+        gap: 30px;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- GENERAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+        min-height: auto;
+        padding: 9px 15px;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .top-bar p {
+        width: 100%;
+    }
+
+    .social-links {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    .navigation {
+        min-height: auto;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand-text h2 {
+        font-size: 16px;
+    }
+
+    .brand-text p {
+        font-size: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 5px 18px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 13px;
+        padding: 7px 0;
+    }
+
+    .apply-button {
+        padding: 11px 18px;
+    }
+
+
+    /* ---------- ACADEMIC HERO ---------- */
+
+    .academic-hero {
+        min-height: 430px;
+        align-items: center;
+    }
+
+    .academic-hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 45px 20px;
+    }
+
+    .small-heading {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .academic-hero-content h1 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
 
     .hero-buttons {
         flex-direction: column;
-
-        align-items: flex-start;
+        width: 100%;
+        gap: 12px;
     }
 
+    .gold-button,
+    .outline-button {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* ---------- INTRODUCTION ---------- */
 
     .academic-intro {
-        padding: 50px 25px;
+        flex-direction: column;
+        gap: 30px;
+        padding: 55px 20px;
     }
 
+    .intro-image,
+    .intro-content {
+        width: 100%;
+    }
+
+    .intro-image img {
+        height: 300px;
+    }
+
+    .section-label {
+        font-size: 13px;
+    }
 
     .intro-content h2 {
         font-size: 30px;
     }
 
+    .intro-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
 
-    .programme-card,
+    .dark-button {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+
+    /* ---------- PROGRAMMES ---------- */
+
+    .programmes {
+        padding: 55px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading p {
+        font-size: 13px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+        line-height: 1.2;
+    }
+
+    .section-heading span {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .programme-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .programme-card {
+        width: 100%;
+        min-width: 0;
+        padding: 30px 20px;
+    }
+
+    .programme-card h3 {
+        font-size: 19px;
+    }
+
+    .programme-card p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .academic-features {
+        padding: 55px 20px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .feature-card {
         width: 100%;
+        min-width: 0;
+        padding: 28px 20px;
     }
 
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+
+    /* ---------- CURRICULUM ---------- */
 
     .curriculum {
-        padding: 55px 25px;
+        flex-direction: column;
+        padding: 55px 20px;
+        gap: 30px;
+        align-items: stretch;
     }
 
+    .curriculum-content,
+    .curriculum-box {
+        width: 100%;
+    }
 
     .curriculum-content h2 {
         font-size: 30px;
     }
 
+    .curriculum-content p {
+        font-size: 15px;
+    }
+
+    .curriculum-box {
+        padding: 20px;
+    }
+
+    .curriculum-item {
+        gap: 12px;
+        padding: 17px 3px;
+    }
+
+    .curriculum-item span {
+        font-size: 18px;
+    }
+
+    .curriculum-item h3 {
+        font-size: 16px;
+    }
+
+    .curriculum-item p {
+        font-size: 13px;
+    }
+
+    .curriculum-content .gold-button {
+        width: 100%;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .academic-cta {
+        padding: 55px 20px;
+    }
+
+    .academic-cta > p {
+        font-size: 13px;
+    }
 
     .academic-cta h2 {
         font-size: 30px;
+        line-height: 1.2;
     }
 
+    .academic-cta span {
+        font-size: 14px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
 
     .footer {
+        height: auto;
         flex-direction: column;
-
-        padding: 50px 25px;
+        gap: 30px;
+        padding: 40px 20px;
     }
 
+    .footer > div {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .we {
+        text-align: left;
+    }
+
+    .link2 {
+        flex-wrap: wrap;
+    }
 
     .copyright {
+        width: 100%;
+        height: auto;
+        min-height: 60px;
+        padding: 15px;
+        gap: 10px;
         flex-direction: column;
+        text-align: center;
+    }
+}
 
-        gap: 8px;
 
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- NAVIGATION ---------- */
+
+    .brand {
+        flex-direction: column;
         text-align: center;
     }
 
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand-text h2 {
+        font-size: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .academic-hero {
+        min-height: 450px;
+    }
+
+    .academic-hero-content {
+        padding: 40px 18px;
+    }
+
+    .academic-hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+
+    /* ---------- INTRO ---------- */
+
+    .intro-image img {
+        height: 250px;
+    }
+
+    .intro-content h2 {
+        font-size: 27px;
+    }
+
+
+    /* ---------- PROGRAMMES ---------- */
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .programme-card {
+        padding: 27px 18px;
+    }
+
+    .programme-icon {
+        font-size: 43px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .feature-card {
+        padding: 25px 18px;
+    }
+
+
+    /* ---------- CURRICULUM ---------- */
+
+    .curriculum-content h2 {
+        font-size: 27px;
+    }
+
+    .curriculum-box {
+        padding: 15px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .academic-cta h2 {
+        font-size: 27px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .copyright {
+        font-size: 11px;
+    }
 }
