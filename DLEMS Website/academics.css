@@ -819,68 +819,298 @@ body {
 }
 
 /* =========================================================
-   FIX MOBILE NAVIGATION
+   RESPONSIVE DESIGN
+   ACADEMICS PAGE
    ========================================================= */
 
-@media (max-width: 800px) {
 
-    /* TOP BAR */
-    .top-bar,
-    .head {
-        width: 100%;
-        height: auto;
-        min-height: 38px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 15px;
-        gap: 8px;
-        text-align: center;
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+        padding: 8px 25px;
+        gap: 15px;
+        flex-wrap: wrap;
+        font-size: 10px;
     }
 
     .social-links {
-        margin-left: 0;
-        justify-content: center;
+        margin-left: auto;
+        gap: 12px;
         flex-wrap: wrap;
     }
 
 
-    /* NAVIGATION */
-    .navigation,
-    .nav {
+    /* ---------- NAVIGATION ---------- */
+
+    .navigation {
+        padding: 15px 25px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand-text h2 {
+        font-size: 17px;
+    }
+
+    .brand-text p {
+        font-size: 11px;
+    }
+
+    .menu {
         width: 100%;
-        height: auto;
-        min-height: auto;
+        margin-left: 0;
+
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding: 15px;
-        gap: 15px;
-        text-align: center;
+
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .apply-button {
+        padding: 11px 18px;
     }
 
 
-    /* LOGO / BRAND */
-    .brand,
-    .nav1 {
+    /* ---------- ACADEMIC HERO ---------- */
+
+    .academic-hero {
+        min-height: 470px;
+    }
+
+    .academic-hero-content {
+        max-width: 650px;
+        padding-left: 45px;
+        padding-right: 30px;
+    }
+
+    .academic-hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+
+    /* ---------- HERO BUTTONS ---------- */
+
+    .hero-buttons {
+        gap: 15px;
+    }
+
+
+    /* ---------- INTRODUCTION ---------- */
+
+    .academic-intro {
+        gap: 40px;
+        padding: 65px 6%;
+    }
+
+    .intro-image,
+    .intro-content {
+        width: 50%;
+    }
+
+    .intro-image img {
+        height: 350px;
+    }
+
+    .intro-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- PROGRAMMES ---------- */
+
+    .programmes {
+        padding: 65px 5%;
+    }
+
+    .programme-card {
+        width: 45%;
+        min-width: 250px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .academic-features {
+        padding: 65px 5%;
+    }
+
+    .feature-card {
+        width: 45%;
+        min-width: 240px;
+    }
+
+
+    /* ---------- CURRICULUM ---------- */
+
+    .curriculum {
+        padding: 65px 6%;
+        gap: 45px;
+    }
+
+    .curriculum-content,
+    .curriculum-box {
+        width: 50%;
+    }
+
+    .curriculum-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .academic-cta {
+        padding: 65px 30px;
+    }
+
+    .academic-cta h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        height: auto;
+        flex-wrap: wrap;
+
+        gap: 30px;
+        padding: 35px 30px;
+    }
+
+    .footer > div {
+        width: 45%;
+        border-right: none;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        height: auto;
+        min-height: 50px;
+
+        gap: 30px;
+        padding: 12px 20px;
+
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- GENERAL ---------- */
+
+    html,
+    body {
         width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+        min-height: auto;
+
+        padding: 9px 15px;
+
         display: flex;
+        flex-direction: column;
+
         justify-content: center;
         align-items: center;
+
+        text-align: center;
+
+        gap: 8px;
+    }
+
+    .top-bar p {
+        width: 100%;
+    }
+
+    .social-links {
+        width: 100%;
+
+        margin-left: 0;
+
+        display: flex;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+
+    /* ---------- NAVIGATION ---------- */
+
+    .navigation {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 15px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 18px;
+    }
+
+
+    /* ---------- BRAND ---------- */
+
+    .brand {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
         gap: 10px;
     }
 
     .logo {
         width: 60px;
         height: 60px;
-        object-fit: contain;
     }
 
     .brand-text h2 {
         font-size: 16px;
-        line-height: 1.2;
+        line-height: 1.15;
     }
 
     .brand-text p {
@@ -889,49 +1119,418 @@ body {
     }
 
 
-    /* MENU */
-    .menu,
-    .nav2 {
+    /* ---------- MENU ---------- */
+
+    .menu {
         width: 100%;
+
         margin-left: 0;
+
         display: flex;
+        flex-direction: column;
+
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        gap: 10px 18px;
+
+        gap: 4px;
     }
 
-    .menu a,
-    .nav2 a {
-        font-size: 13px;
+    .menu a {
+        font-size: 14px;
         padding: 7px 0;
-        white-space: nowrap;
     }
 
 
-    /* APPLY BUTTON */
+    /* ---------- APPLY BUTTON ---------- */
+
     .apply-button {
         display: inline-block;
-        padding: 11px 18px;
+
+        padding: 12px 20px;
+
         font-size: 12px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .academic-hero {
+        width: 100%;
+
+        min-height: 440px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .academic-hero-content {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 50px 20px;
+    }
+
+    .small-heading {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .academic-hero-content h1 {
+        font-size: 38px;
+        line-height: 1.15;
+
+        margin-bottom: 18px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* ---------- HERO BUTTONS ---------- */
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        margin-top: 25px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .gold-button,
+    .outline-button {
+        width: 100%;
+
+        padding: 14px 18px;
+    }
+
+
+    /* ---------- INTRODUCTION ---------- */
+
+    .academic-intro {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+
+        padding: 55px 20px;
+    }
+
+    .intro-image,
+    .intro-content {
+        width: 100%;
+    }
+
+    .intro-image img {
+        width: 100%;
+        height: 300px;
+
+        border-radius: 12px;
+    }
+
+    .section-label {
+        font-size: 13px;
+    }
+
+    .intro-content h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .intro-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .dark-button {
+        width: 100%;
+
+        padding: 14px 20px;
+    }
+
+
+    /* ---------- PROGRAMMES ---------- */
+
+    .programmes {
+        width: 100%;
+
+        padding: 55px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading p {
+        font-size: 13px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .section-heading span {
+        display: block;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .programme-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .programme-card {
+        width: 100%;
+        min-width: 0;
+
+        padding: 30px 20px;
+    }
+
+    .programme-icon {
+        font-size: 45px;
+    }
+
+    .programme-card h3 {
+        font-size: 19px;
+    }
+
+    .programme-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .academic-features {
+        width: 100%;
+
+        padding: 55px 20px;
+    }
+
+    .feature-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .feature-card {
+        width: 100%;
+        min-width: 0;
+
+        padding: 28px 20px;
+    }
+
+    .feature-icon {
+        font-size: 38px;
+    }
+
+    .feature-card h3 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- CURRICULUM ---------- */
+
+    .curriculum {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 55px 20px;
+
+        gap: 35px;
+
+        align-items: stretch;
+    }
+
+    .curriculum-content,
+    .curriculum-box {
+        width: 100%;
+    }
+
+    .curriculum-content h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .curriculum-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .curriculum-content .gold-button {
+        width: 100%;
+    }
+
+    .curriculum-box {
+        padding: 20px;
+    }
+
+    .curriculum-item {
+        gap: 12px;
+        padding: 17px 5px;
+    }
+
+    .curriculum-item span {
+        font-size: 18px;
+    }
+
+    .curriculum-item h3 {
+        font-size: 16px;
+    }
+
+    .curriculum-item p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .academic-cta {
+        width: 100%;
+
+        padding: 55px 20px;
+    }
+
+    .academic-cta > p {
+        font-size: 13px;
+    }
+
+    .academic-cta h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .academic-cta span {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .academic-cta .gold-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        width: 100%;
+
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 40px 20px;
+    }
+
+    .footer > div {
+        width: 100%;
+
+        border-right: none;
+
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .footer > div:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .foot {
+        align-items: flex-start;
+    }
+
+    .we {
+        text-align: left;
+    }
+
+    .link2 {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+
+    /* ---------- COPYRIGHT ---------- */
+
+    .copyright {
+        width: 100%;
+
+        height: auto;
+        min-height: 60px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        padding: 15px;
+
+        text-align: center;
+
+        font-size: 11px;
     }
 }
 
 
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
+/* ================= SMALL PHONES ================= */
 
 @media (max-width: 480px) {
 
-    .navigation,
-    .nav {
-        padding: 15px 10px;
-        gap: 12px;
+    /* ---------- TOP BAR ---------- */
+
+    .top-bar {
+        font-size: 9px;
     }
 
-    .brand,
-    .nav1 {
+    .social-links a {
+        font-size: 10px;
+    }
+
+
+    /* ---------- BRAND ---------- */
+
+    .brand {
         flex-direction: column;
     }
 
@@ -948,20 +1547,89 @@ body {
         font-size: 9px;
     }
 
-    .menu,
-    .nav2 {
+
+    /* ---------- MENU ---------- */
+
+    .menu {
         flex-direction: column;
         gap: 3px;
     }
 
-    .menu a,
-    .nav2 a {
+    .menu a {
         font-size: 14px;
         padding: 6px 0;
     }
 
-    .apply-button {
-        padding: 10px 17px;
-        font-size: 12px;
+
+    /* ---------- HERO ---------- */
+
+    .academic-hero {
+        min-height: 450px;
+    }
+
+    .academic-hero-content {
+        padding: 45px 15px;
+    }
+
+    .academic-hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+
+    /* ---------- INTRO ---------- */
+
+    .intro-image img {
+        height: 250px;
+    }
+
+    .intro-content h2 {
+        font-size: 27px;
+    }
+
+
+    /* ---------- PROGRAMMES ---------- */
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .programme-card {
+        padding: 27px 18px;
+    }
+
+
+    /* ---------- FEATURES ---------- */
+
+    .feature-card {
+        padding: 25px 18px;
+    }
+
+
+    /* ---------- CURRICULUM ---------- */
+
+    .curriculum-content h2 {
+        font-size: 27px;
+    }
+
+    .curriculum-box {
+        padding: 15px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .academic-cta h2 {
+        font-size: 27px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .copyright {
+        font-size: 10px;
     }
 }

@@ -638,7 +638,9 @@ body {
 
 /* =========================================================
    RESPONSIVE DESIGN
+   ABOUT US PAGE
    ========================================================= */
+
 
 /* ================= TABLET ================= */
 
@@ -656,6 +658,7 @@ body {
     .social-links {
         margin-left: auto;
         gap: 12px;
+        flex-wrap: wrap;
     }
 
 
@@ -665,10 +668,6 @@ body {
         padding: 15px 25px;
         gap: 20px;
         flex-wrap: wrap;
-    }
-
-    .brand {
-        gap: 10px;
     }
 
     .logo {
@@ -686,10 +685,16 @@ body {
 
     .menu {
         width: 100%;
-        justify-content: center;
         margin-left: 0;
+
+        justify-content: center;
         gap: 18px;
+
         flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 12px;
     }
 
     .apply-button {
@@ -697,11 +702,15 @@ body {
     }
 
 
-    /* ---------- HERO ---------- */
+    /* ---------- ABOUT HERO ---------- */
 
     .about-hero {
         height: 400px;
         padding: 45px;
+    }
+
+    .hero-content {
+        max-width: 650px;
     }
 
     .hero-content h1 {
@@ -718,6 +727,11 @@ body {
     .who-we-are {
         gap: 40px;
         padding: 65px 5%;
+    }
+
+    .about-image,
+    .about-content {
+        width: 50%;
     }
 
     .about-image img {
@@ -760,6 +774,11 @@ body {
         gap: 45px;
     }
 
+    .why-content,
+    .why-list {
+        width: 50%;
+    }
+
     .why-content h2 {
         font-size: 36px;
     }
@@ -769,6 +788,7 @@ body {
 
     .about-cta {
         padding: 50px 6%;
+        gap: 25px;
     }
 
     .about-cta h2 {
@@ -781,6 +801,8 @@ body {
     .footer {
         height: auto;
         flex-wrap: wrap;
+
+        gap: 30px;
         padding: 35px 30px;
     }
 
@@ -793,10 +815,12 @@ body {
     .copyright {
         height: auto;
         min-height: 50px;
+
         gap: 30px;
         padding: 12px 20px;
-        text-align: center;
+
         flex-wrap: wrap;
+        text-align: center;
     }
 }
 
@@ -810,16 +834,27 @@ body {
     html,
     body {
         width: 100%;
+        max-width: 100%;
         overflow-x: hidden;
     }
+
 
     /* ---------- TOP BAR ---------- */
 
     .top-bar {
         min-height: auto;
+
         padding: 9px 15px;
+
+        display: flex;
+        flex-direction: column;
+
         justify-content: center;
+        align-items: center;
+
         text-align: center;
+
+        gap: 8px;
     }
 
     .top-bar p {
@@ -828,24 +863,49 @@ body {
 
     .social-links {
         width: 100%;
-        justify-content: center;
+
         margin-left: 0;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
     }
 
 
     /* ---------- NAVIGATION ---------- */
 
     .navigation {
+        width: 100%;
+
         min-height: auto;
+
         padding: 15px;
+
+        display: flex;
         flex-direction: column;
+
+        justify-content: center;
         align-items: center;
+
         gap: 18px;
     }
 
+
+    /* ---------- BRAND ---------- */
+
     .brand {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
         justify-content: center;
+
         text-align: center;
+
+        gap: 10px;
     }
 
     .logo {
@@ -855,18 +915,29 @@ body {
 
     .brand-text h2 {
         font-size: 16px;
+        line-height: 1.15;
     }
 
     .brand-text p {
         font-size: 10px;
+        margin-top: 4px;
     }
+
+
+    /* ---------- MENU ---------- */
 
     .menu {
         width: 100%;
-        flex-direction: column;
-        gap: 5px;
+
         margin-left: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
         align-items: center;
+
+        gap: 4px;
     }
 
     .menu a {
@@ -874,17 +945,26 @@ body {
         padding: 7px 0;
     }
 
+
+    /* ---------- APPLY BUTTON ---------- */
+
     .apply-button {
         display: inline-block;
+
         padding: 12px 20px;
+
+        font-size: 12px;
     }
 
 
-    /* ---------- HERO ---------- */
+    /* ---------- ABOUT HERO ---------- */
 
     .about-hero {
+        width: 100%;
+
         height: auto;
         min-height: 420px;
+
         padding: 55px 20px;
     }
 
@@ -901,6 +981,8 @@ body {
     .hero-content h1 {
         font-size: 38px;
         line-height: 1.15;
+
+        margin-bottom: 18px;
     }
 
     .hero-content > p:last-child {
@@ -912,8 +994,13 @@ body {
     /* ---------- WHO WE ARE ---------- */
 
     .who-we-are {
+        width: 100%;
+
+        display: flex;
         flex-direction: column;
+
         gap: 35px;
+
         padding: 55px 20px;
     }
 
@@ -923,24 +1010,37 @@ body {
     }
 
     .about-image img {
+        width: 100%;
         height: 300px;
+
         border-radius: 12px;
     }
 
     .about-content h2 {
         font-size: 31px;
+        line-height: 1.2;
     }
 
     .about-content p {
         font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .learn-button {
+        padding: 13px 22px;
     }
 
 
     /* ---------- MISSION & VISION ---------- */
 
     .mission-section {
+        width: 100%;
+
+        display: flex;
         flex-direction: column;
+
         padding: 55px 20px;
+
         gap: 20px;
     }
 
@@ -953,15 +1053,23 @@ body {
         font-size: 25px;
     }
 
+    .mission-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
 
     /* ---------- VALUES ---------- */
 
     .values-section {
+        width: 100%;
+
         padding: 55px 20px;
     }
 
     .section-heading {
         font-size: 31px;
+        line-height: 1.2;
     }
 
     .section-intro {
@@ -970,23 +1078,45 @@ body {
     }
 
     .values-container {
+        width: 100%;
+
+        display: flex;
         flex-direction: column;
+
         align-items: center;
+
+        gap: 20px;
     }
 
     .value-card {
         width: 100%;
         min-height: auto;
+
         padding: 28px 20px;
+    }
+
+    .value-card h3 {
+        font-size: 19px;
+    }
+
+    .value-card p {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
 
     /* ---------- WHY SECTION ---------- */
 
     .why-section {
+        width: 100%;
+
+        display: flex;
         flex-direction: column;
+
         padding: 55px 20px;
+
         gap: 35px;
+
         align-items: stretch;
     }
 
@@ -997,28 +1127,55 @@ body {
 
     .why-content h2 {
         font-size: 32px;
+        line-height: 1.2;
     }
 
     .why-content p {
         font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .why-item {
+        width: 100%;
+
+        padding: 15px;
+
+        font-size: 14px;
+    }
+
+    .why-item span {
+        font-size: 18px;
+        margin-right: 10px;
     }
 
 
     /* ---------- CTA ---------- */
 
     .about-cta {
+        width: 100%;
+
+        display: flex;
         flex-direction: column;
+
         align-items: flex-start;
+
         padding: 50px 20px;
+
         gap: 25px;
+    }
+
+    .about-cta > div {
+        width: 100%;
     }
 
     .about-cta h2 {
         font-size: 31px;
+        line-height: 1.2;
     }
 
     .about-cta p:last-child {
         font-size: 15px;
+        line-height: 1.6;
     }
 
     .cta-button {
@@ -1029,16 +1186,28 @@ body {
     /* ---------- FOOTER ---------- */
 
     .footer {
+        width: 100%;
         height: auto;
+
+        display: flex;
         flex-direction: column;
+
         gap: 30px;
+
         padding: 40px 20px;
     }
 
     .footer > div {
         width: 100%;
+
         border-right: none;
+
         padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .footer > div:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .foot {
@@ -1049,15 +1218,36 @@ body {
         text-align: left;
     }
 
+    .link2 {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+
+    /* ---------- COPYRIGHT ---------- */
+
     .copyright {
         width: 100%;
+
         height: auto;
         min-height: 60px;
-        padding: 15px;
-        gap: 10px;
+
+        display: flex;
         flex-direction: column;
+
         justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+
+        padding: 15px;
+
         text-align: center;
+
+        font-size: 11px;
     }
 }
 
@@ -1065,6 +1255,8 @@ body {
 /* ================= SMALL PHONES ================= */
 
 @media (max-width: 480px) {
+
+    /* ---------- TOP BAR ---------- */
 
     .top-bar {
         font-size: 9px;
@@ -1074,12 +1266,45 @@ body {
         font-size: 10px;
     }
 
+
+    /* ---------- BRAND ---------- */
+
+    .brand {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
     .brand-text h2 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .brand-text p {
         font-size: 9px;
+    }
+
+
+    /* ---------- MENU ---------- */
+
+    .menu {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .about-hero {
+        min-height: 440px;
+        padding: 45px 15px;
     }
 
     .hero-content h1 {
@@ -1090,6 +1315,9 @@ body {
         font-size: 15px;
     }
 
+
+    /* ---------- WHO WE ARE ---------- */
+
     .about-image img {
         height: 250px;
     }
@@ -1097,6 +1325,9 @@ body {
     .about-content h2 {
         font-size: 28px;
     }
+
+
+    /* ---------- MISSION ---------- */
 
     .mission-card {
         padding: 25px 18px;
@@ -1106,15 +1337,10 @@ body {
         font-size: 23px;
     }
 
+
+    /* ---------- VALUES ---------- */
+
     .section-heading {
-        font-size: 28px;
-    }
-
-    .why-content h2 {
-        font-size: 28px;
-    }
-
-    .about-cta h2 {
         font-size: 28px;
     }
 
@@ -1122,13 +1348,28 @@ body {
         font-size: 18px;
     }
 
-    .value-card p,
-    .mission-card p,
+
+    /* ---------- WHY ---------- */
+
+    .why-content h2 {
+        font-size: 28px;
+    }
+
     .why-item {
         font-size: 14px;
     }
 
+
+    /* ---------- CTA ---------- */
+
+    .about-cta h2 {
+        font-size: 28px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
     .copyright {
-        font-size: 11px;
+        font-size: 10px;
     }
 }
