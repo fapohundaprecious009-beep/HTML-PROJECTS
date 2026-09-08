@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navigators{
+    background-color: black;
+    display: flex;
+    text-decoration: none;
+    gap: 50px;
+    width: 100%;
+    height: 80px;
+    padding-top: 30px;
+    justify-content: center;
+}
+.navigators a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.muscle{
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    padding-top: 120px;
+}
+.elevate{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.intro{                
+    padding-top: 50px;
+    display: flex;
+    gap: 100px;
+}
+.why{
+    padding-left: 20px;
+    color: darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.text{
+    padding-left: 20px;
+    padding-right: 80px;
+    padding-top: 20px;
+    color: rgb(97, 96, 96);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding-bottom: 100px;
+}
+.gym{
+    height: 400px;
+    width: 500px;
+    padding-right: 100px;
+    border-radius: 100%;
+    
+}
+
+.service{
+    background-color: rgb(175, 175, 175);
+    height: 650px;
+}
+.the{
+    padding-top: 50px;
+    text-align: center;
+    color: darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+.images{
+    display: flex;
+    gap: 20px;
+    height: 400px;
+    width: 400px;
+    padding-left: 20px;
+    border-radius: 5cm;
+}
+.up{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.faci{
+    padding-top: 50px;
+    color: darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.complete{
+     padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.facilities{
+    display: flex;
+    gap: 50px;
+}
+
+.room{
+    height: 400px;
+    width: 400px;
+    margin-top:80px;
+    margin-left: 20px;
+    padding-bottom: 70px;
+    border-radius: 100px 0 100px 0;
+}
+
+.list{
+    padding-left: 30px;
+}
+
+.trainers{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("premium_photo-1661284821625-9400498df354.avif");
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+.fit{
+    color: darkred;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 120px;
+}
+.mem{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.our{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.per{
+    padding-top: 90px;
+    color: darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.session{
+    padding-left: 30px;
+}
+
+
+.last{
+    width: 100%;
+    height: 80px;
+    padding-top: 30px;
+    justify-content: center;
+    background-color: rgb(97, 96, 96);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.these{
+    text-align: center;
+    font-weight: bold;
+}
+
+.these a{
+    color: darkred;
+}
+
+/* ==========================================
+   MUSCLE UP GYM - INTEGRATED FOOTER STYLES
+   ========================================== */
+
+/* Main Footer Container */
+footer, 
+.footer-section {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 60px 20px 30px 20px;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    border-top: 4px solid #ff3e3e; /* High-energy gym accent color */
+}
+
+/* Internal Layout Wrapper */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Individual Column Headers */
+footer h2, 
+footer h3,
+.footer-section h2, 
+.footer-section h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Focus on Branding Title (MUSCLE UP) */
+footer h2 strong,
+.footer-section h2 strong {
+    color: #ff3e3e;
+}
+
+/* Typography & Contact Text */
+footer p, 
+.footer-section p,
+footer span, 
+.footer-section span {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Links & Navigation List Items */
+footer ul, 
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li, 
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+footer a, 
+.footer-section a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+footer a:hover, 
+.footer-section a:hover {
+    color: #ff3e3e;
+    padding-left: 5px;
+}
+
+/* Newsletter Subscription Styling */
+.footer-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Input Fields (Assuming an input tag exists near "Sign up") */
+footer input[type="email"],
+.footer-section input[type="email"] {
+    background-color: #222222;
+    border: 1px solid #333333;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+footer input[type="email"]:focus,
+.footer-section input[type="email"]:focus {
+    border-color: #ff3e3e;
+}
+
+/* High-Impact CTA Button */
+footer button, 
+footer .btn-signup,
+.footer-section button {
+    background-color: #ff3e3e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer button:hover, 
+.footer-section button:hover {
+    background-color: #e02d2d;
+    transform: translateY(-2px);
+}
+
+/* Bottom Copyright and Legal Terms Bar */
+.footer-bottom {
+    border-top: 1px solid #222222;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+/* Mobile & Small Screen Optimizations */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+    }
+}

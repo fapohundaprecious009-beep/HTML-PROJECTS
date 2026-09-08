@@ -1,0 +1,25 @@
+#me{
+  height: fit-content;
+  width: 600px;
+  padding: 20px;
+  background-color: brown;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 50px;
+  justify-self: center;
+  text-align: center;
+  margin-top: 7cm;
+}
+
+button{
+  height: fit-content;
+  width: 600px;
+  padding: 20px;
+  background-color: white;
+  color: brown;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 0px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 330px;
+}

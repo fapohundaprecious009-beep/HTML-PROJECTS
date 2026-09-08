@@ -1,29 +1,7 @@
-*{
-
-}
-.container {
-  display: grid;                       
-  grid-template-columns: 1fr 1fr 1fr;  
-  gap: 20px;   
-  border: solid, red;                               
-}
-
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 120px;
-  background-color: violet;
+#precious{
+  height: fit-content;
+  width: 600px;
   padding: 20px;
+  background-color: blue;
+  border-radius: 50px;
 }
-
-@/* 1. Define the flipbook script */
-@keyframes moveBox {
-  from { margin-left: 0px; }   /* Start */
-  to   { margin-left: 100px; } /* Finish */
-}
-
-/* 2. Attach it to your box and tell it to play for 2 seconds */
-.box {
-  animation: moveBox 2s infinite;
-}
-
