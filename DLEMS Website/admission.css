@@ -855,7 +855,7 @@ a {
    SMALL PHONES
 ========================================= */
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 
     .academic-hero {
         padding: 20px;

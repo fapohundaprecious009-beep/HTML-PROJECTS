@@ -822,7 +822,7 @@ body {
    RESPONSIVE DESIGN
 ===================================================== */
 
-@media (max-width: 1000px) {
+@media (max-width: 400px) {
 
     .nav {
         flex-wrap: wrap;
