@@ -684,11 +684,9 @@ body {
     }
 
     .menu {
-        width: 100%;
         margin-left: 0;
 
         justify-content: center;
-        gap: 18px;
 
         flex-wrap: wrap;
     }
