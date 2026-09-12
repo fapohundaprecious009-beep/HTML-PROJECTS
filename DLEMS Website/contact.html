@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us Page | De-Leaders Empire Model Schools</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
 </head>
 <body>
 
@@ -264,7 +265,7 @@
 
 
     <!-- CONTACT FORM -->
-    <div class="form">
+    <div class="form" id="messageForm">
 
         <h1>SEND US A MESSAGE</h1>
 
@@ -276,7 +277,7 @@
                     type="text"
                     id="name"
                     class="headss"
-                    placeholder="Enter your full name">
+                    placeholder="Enter your full name" required> 
                 <br><br>
             </div>
 
@@ -286,7 +287,7 @@
                     type="email"
                     id="email"
                     class="headss"
-                    placeholder="Enter your email address">
+                    placeholder="Enter your email address" required>
                 <br><br>
             </div>
 
@@ -296,7 +297,7 @@
                     type="tel"
                     id="number"
                     class="headss"
-                    placeholder="Enter your phone number">
+                    placeholder="Enter your phone number" required>
                 <br><br>
             </div>
 
@@ -306,7 +307,7 @@
                     type="text"
                     id="subject"
                     class="headss"
-                    placeholder="What is your message about?">
+                    placeholder="What is your message about?" required>
                 <br><br>
             </div>
 
@@ -315,12 +316,12 @@
                 <textarea
                     id="message"
                     class="headsss"
-                    placeholder="Write your message here..."></textarea>
+                    placeholder="Write your message here..." required></textarea>
                 <br><br>
             </div>
 
             <div>
-                <button type="submit">SEND MESSAGE</button>
+                <button type="submit" id="mySubmit" onclick="myFunction()">SEND MESSAGE</button>
             </div>
 
         </form>

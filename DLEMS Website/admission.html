@@ -8,6 +8,7 @@
     <title>Admission | De-Leaders Empire Model Schools</title>
 
     <link rel="stylesheet" href="admission.css">
+    <script src="admission.js"></script>
 </head>
 
 <body>
@@ -274,7 +275,7 @@
 
             <!-- RIGHT FORM -->
 
-            <div class="application-form">
+            <div class="application-form" id="messageForm">
 
                 <h2>
                     Online Admission Application
@@ -598,9 +599,10 @@
 
                     <!-- SUBMIT -->
 
-                    <button
-                        type="submit"
+                    <button onclick="myFunction()"
+                        type="button"
                         class="submit-btn"
+                        id="mySubmit"
                     >
                         SUBMIT APPLICATION →
                     </button>
